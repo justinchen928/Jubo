@@ -42,7 +42,10 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       tableName: "patients",
-      timestamps: false,
+      timestamps: true,
+      underscored: true,
+      updatedAt: "updated_at",
+      createdAt: "created_at",
     }
   );
 

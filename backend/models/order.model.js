@@ -22,17 +22,6 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.TEXT,
         allowNull: false,
       },
-      created_at: {
-        type: DataTypes.DATE,
-        allowNull: false,
-        defaultValue: DataTypes.NOW,
-      },
-      updated_at: {
-        type: DataTypes.DATE,
-        allowNull: false,
-        defaultValue: DataTypes.NOW,
-        onUpdate: DataTypes.NOW,
-      },
       formatted_created_at: {
         type: DataTypes.VIRTUAL,
         get() {
@@ -52,7 +41,10 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       tableName: "orders",
-      timestamps: false,
+      timestamps: true,
+      underscored: true,
+      updatedAt: "updated_at",
+      createdAt: "created_at",
     }
   );
 
