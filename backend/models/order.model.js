@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
         onDelete: "CASCADE",
       },
       message: {
-        type: DataTypes.STRING,
+        type: DataTypes.TEXT,
         allowNull: false,
       },
       created_at: {
