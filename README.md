@@ -21,6 +21,9 @@ Jubo面試專案，這個項目是一個簡單的病人醫囑管理系統，您�
 - 新增新的醫囑。
 - 編輯現有的醫囑。
 
+### DEMO影片
+[![Watch the video](https://i.imgur.com/06faWqR.jpg)](https://drive.google.com/file/d/1YdefXSrWGPKBt_Fp0ILKwzuGMF37CuyI/view?usp=sharing)
+
 ## 技術棧
 ### 前端
 - 使用 React hooks (useState, useEffect)
